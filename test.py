@@ -244,7 +244,7 @@ def main():
                 domain=DOMAINS[args.dataset],
             )
             df.loc[len(df)] = Series(class_result_dict)
-        df.loc[len(df)] = df.mean()
+        df.loc[len(df)] = df.mean(numeric_only=True)
         df.loc[len(df) - 1]["class name"] = "Average"
         logger.info("final results:\n%s", df.to_string(index=False, justify="center"))
 
