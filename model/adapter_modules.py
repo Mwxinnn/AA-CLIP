@@ -1,6 +1,4 @@
 from torch import nn
-import ipdb
-import math
 
 
 class SimpleAdapter(nn.Module):

@@ -25,3 +25,5 @@ __pycache__/
 
 # 忽略所有 .swp 文件（Vim编辑器产生的交换文件）
 *.swp
+
+wandb/

@@ -1,5 +1,4 @@
 from collections import OrderedDict
-import math
 from typing import Callable, Optional, Sequence, Tuple
 from itertools import repeat
 import collections.abc
@@ -7,7 +6,6 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 from torch.utils.checkpoint import checkpoint
-import ipdb
 
 
 # From PyTorch internals

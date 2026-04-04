@@ -4,13 +4,10 @@ import os
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from tqdm import tqdm
 from kornia.filters import gaussian_blur2d
-import ipdb
 from dataset.constants import CLASS_NAMES, REAL_NAMES, PROMPTS
 from model.tokenizer import tokenize
 from sklearn.metrics import roc_auc_score, average_precision_score
-import pandas as pd
 from dataset.constants import DATA_PATH
 from utils import cos_sim
 
